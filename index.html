@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>MY PORTFOLIO</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">PORTFOLIO</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="index.html">ACTIVITY</a></li>
+            <li><a href="#">CERTIFICATE</a></li>
+            <li><a href="#">CONTECT</a></li>
+        </ul>    
+        <img src="./menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Welcome</h2>
+            <h2>Hi, I'm Nichaphat</h1>
+        </div>
+    </header>
+    <section >
+       <!----About section start---->
+	<section class="about">
+		<div class="main">
+			<img src="./tzuyu1.jpg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>NICHA<span>PHAT</span></h5>
+				<p>My name is Nichaphat Bungoen. <br> You can call me "Opal." <br>
+                    My birthday is on April 25th, 2004. <br> I would like to be a software developer, <br> and I would also like to be a web developer.</p>
+				<button type="button"><a href="index.html">More >></a></button>
+			</div>
+		</div>
+	</section>
+
+    </section>
+  
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+            
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        
+        </script>
+</body>
+
+</html>

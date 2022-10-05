@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(207, 181, 181);
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+.nav-links a{
+    color: rgb(231, 197, 197);
+}
+
+header
+{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    background-position: ce;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.header-content{
+    padding: 10px 10%;
+    color: white;
+    text-align: center;
+    margin-top: 20%;   
+}
+.header-content h1 {
+    font-size: 15vmin;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    background: black;
+    animation: text 5s 1;
+
+}
+.header-content h2{
+    font-size: 2vmin;
+    font-family: Segoe Script;
+    color: rgb(81, 12, 12);
+    margin-bottom: 10px;
+    background: black;
+
+}
+@keyframes text {
+    0%{
+        color: black;
+    }
+    30%{
+        letter-spacing: 25px;
+    }
+    85%{
+        letter-spacing: 8px;
+    }
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* about me section */
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+.about img{
+	height: auto;
+	width: 300px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 50px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 18px;
+    font-family: Segoe Script;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+button  {
+    color: rgb(126, 32, 32);
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px ;
+    border: none;
+  }
+button a {
+    color: rgb(126, 32, 32);
+  }
+
+/*mobile*/
+@media only screen and (max-width:490px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 60vh;
+        justify-content: center;
+        background-color: gray;
+        margin-top: -1500px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    .header-content{
+       
+        margin-top: 50%;  
+    }
+    header {
+        height: 60vh;
+    }
+}
+
+
+@media only screen and (width:768px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        background-color: gray;
+        margin-top: -1500px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    .header-content{
+       
+        margin-top: 40%;  
+    }
+    header {
+        height: 70vh;
+    }
+}
+/*mobile*/
+@media only screen and (width:640px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 110vh;
+        justify-content: center;
+        background-color: gray;
+        margin-top: -1500px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+    }
+    .nav-links li {
+        margin: 10px auto;
+    }
+    .header-content{
+       
+        margin-top: 20%;  
+    }
+    header {
+        height: 110vh;
+    }
+}
+@media only screen and (width:820px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 120vh;
+        justify-content: center;
+        background-color: gray;
+        margin-top: -1500px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+    }
+    .nav-links li {
+        margin: 10px auto;
+    }
+    .header-content{
+       
+        margin-top: 20%;  
+    }
+    header {
+        height: 120vh;
+    }
+}
+@media only screen and (width:820px){
+    .nav-links {  
+        height: 70vh;
+    }
+    .header-content{
+       
+        margin-top: 40%;  
+    }
+    header {
+        height: 70vh;
+    }
+}
+@media only screen and (width:540px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        background-color: gray;
+        margin-top: -1500px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    .header-content{
+       
+        margin-top: 30%;  
+    }
+    header {
+        height: 70vh;
+    }
+}
+@media only screen and (min-width:1024px){
+    
+    .header-content{
+       
+        margin-top: 20%;  
+    }
+    header {
+        height: 100vh;
+    }
+}
+@media only screen and (width:912px){
+    
+    .header-content{
+       
+        margin-top: 20%;  
+    }
+    header {
+        height: 50vh;
+    }
+}
+
+

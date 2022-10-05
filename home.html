@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MY PORTFOLIO</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">PORTFOLIO</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html"></a>HOME</li>
+            <li><a href="index.html"></a>ACTIVITY</li>
+            <li><a href="#"></a>CERTIFICATE</li>
+            <li><a href="#"></a>ABOUT ME</li>
+            <li><a href="#"></a>CONTECT</li>
+        </ul>    
+        <img src="./menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Welcome</h2>
+            <h2>My Name is Nichaphat</h1>
+        </div>
+    </header>
+  
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+            
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        
+        </script>
+</body>
+</html>
