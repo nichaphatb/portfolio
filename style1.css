@@ -97,6 +97,7 @@ header
 .about-text{
 	width: 550px;
 }
+
 .main{
 	width: 1130px;
 	max-width: 95%;
@@ -126,20 +127,20 @@ header
 	font-size: 18px;
 	margin-bottom: 20px;
 }
-button  {
-    color: rgb(126, 32, 32);
-    padding: 16px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 25px ;
-    border: none;
+.button  {
+  background-color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  
   }
-button a {
+.button a {
     color: rgb(126, 32, 32);
   }
 
@@ -160,7 +161,7 @@ button a {
     .nav-links {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 60vh;
         justify-content: center;
         background-color: gray;
         margin-top: -1500px;
@@ -191,6 +192,7 @@ button a {
 	font-size: 30px;
 	text-transform: capitalize;
 	margin-bottom: 10px;
+    margin-top: 10px;
     text-align: center;
 }
 .about-text h5{
@@ -207,24 +209,17 @@ button a {
 	line-height: 28px;
 	font-size: 18px;
 	margin-bottom: 20px;
-}
-button  {
-    color: rgb(126, 32, 32);
-    padding: 16px 30px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 25px ;
-    border: none;
-  }
-button a {
-    color: rgb(126, 32, 32);
-  }
-
+}
+.about
+{
+    padding: 50px 0px;
+}
+.about-text .button{
+    align-items: center;
+    display: block;
+    margin: auto;
+}
     
 
 @media only screen and (width:768px){
