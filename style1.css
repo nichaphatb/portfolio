@@ -33,7 +33,7 @@ ul {
 
 header
 {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color:black;
     background-position: center;
@@ -171,7 +171,7 @@ header
         margin-top: 0px;
     }
     .nav-links li {
-        margin: 30px auto;
+        margin: 19px auto;
     }
     .header-content{
        
@@ -220,7 +220,7 @@ header
     display: block;
     margin: auto;
 }
-    
+}    
 
 @media only screen and (width:768px){
     .menu-btn {
@@ -248,6 +248,7 @@ header
     }
     .nav-links li {
         margin: 30px auto;
+        font-size: 25px;
     }
     .header-content{
        
@@ -255,6 +256,13 @@ header
     }
     header {
         height: 70vh;
+    }
+    .about-text {
+        width: 400px;
+    }
+    .about img {
+        height: auto;
+        width: 250px;
     }
 }
 /*mobile*/
@@ -262,6 +270,9 @@ header
     .menu-btn {
         display: block;
     }
+    img.menu-btn{
+        width: 30px;
+    }
     .navbar {
         padding: 0;
     }
@@ -283,7 +294,7 @@ header
         margin-top: 0px;
     }
     .nav-links li {
-        margin: 10px auto;
+        margin: 14px auto;
     }
     .header-content{
        
@@ -292,7 +303,44 @@ header
     header {
         height: 110vh;
     }
+   
+    .about img {
+        height: auto;
+        width: 200px;
+    }
+    .about-text h2{
+        color: white;
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    .about-text {
+        width: 300px;
+    }
+    .button  {
+        background-color: white;
+        border: none;
+        padding: 12px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 27px;
+        
+        }
+     
 }
+
 @media only screen and (width:820px){
     .menu-btn {
         display: block;
@@ -308,7 +356,7 @@ header
     .nav-links {
         flex-direction: column;
         width: 100%;
-        height: 120vh;
+        height: 50vh;
         justify-content: center;
         background-color: gray;
         margin-top: -1500px;
@@ -318,28 +366,43 @@ header
         margin-top: 0px;
     }
     .nav-links li {
-        margin: 10px auto;
+        margin: 20px auto;
+        font-size: 20px;
     }
     .header-content{
        
-        margin-top: 20%;  
+        margin-top: 25%;  
     }
     header {
-        height: 120vh;
+        height: 50vh;
+    }
+    .about{
+        width: 100%;
+        padding: 150px 0px;
+    }
+    .about-text h2{
+        color: white;
+        font-size: 40px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        width: 450px;
+    }
+    .main img{
+        height: auto;
+        width: 250px;
     }
 }
-@media only screen and (width:820px){
-    .nav-links {  
-        height: 70vh;
-    }
-    .header-content{
-       
-        margin-top: 40%;  
-    }
-    header {
-        height: 70vh;
-    }
-}
+
 @media only screen and (width:540px){
     .menu-btn {
         display: block;
@@ -374,6 +437,46 @@ header
     header {
         height: 70vh;
     }
+    .about img{
+        height: auto;
+        width: 200px;
+    }
+  .main {
+    flex-wrap: wrap
+  }
+  .about-text h2{
+	color: white;
+	font-size: 30px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 18px;
+    font-family: Segoe Script;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 20px;
+    text-align: center;
+}
+.about
+{
+    padding: 50px 0px;
+}
+.about-text .button{
+    align-items: center;
+    display: block;
+    margin: auto;
+}
 }
 @media only screen and (min-width:1024px){
     
@@ -394,7 +497,21 @@ header
     header {
         height: 50vh;
     }
+    .about-text {
+        width: 450px;
+    }
+    .about {
+        padding: 150px 0px;
+    }
+    .nav-links {
+        font-size: 14px;
+    }
+    .about-text p {
+        font-size: 24px;
+    }
+    .button {
+        font-size: 20px;
+    }
+
 }
 
-
-}
