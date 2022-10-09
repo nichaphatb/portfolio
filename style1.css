@@ -311,7 +311,7 @@ header
     }
     #about img{
         height: auto;
-        width: 200px;
+        width: 120px;
     }
   .main {
     flex-wrap: wrap
@@ -327,7 +327,7 @@ header
 .about-text h5{
 	color: white;
 	letter-spacing: 2px;
-	font-size: 18px;
+	font-size: 10px;
     font-family: Segoe Script;
 	margin-bottom: 20px;
 	text-transform: capitalize;
@@ -336,7 +336,7 @@ header
 	color: #fcfc;
 	letter-spacing: 1px;
 	line-height: 28px;
-	font-size: 18px;
+	font-size: 12px;
 	margin-bottom: 20px;
     text-align: center;
 }
@@ -348,11 +348,35 @@ header
     align-items: center;
     display: block;
     margin: auto;
+    font-size: 14px;
 }
 .col{
     width: calc(50%);
     cursor: pointer;
+    margin-left: 20px;
+
  }
+ .front , .back{
+
+    text-align: center;
+    min-height: 120px;
+ 
+}
+#title h2{
+    font-size: 40px;
+
+}
+#title{
+    padding: 80px 0px;
+
+}
+.bnt {
+    margin-top: 5px;
+    font-size: 14px;
+}
+.inner p{
+    font-size: 8px;
+}
 }    
 
 @media only screen and (width:768px){
