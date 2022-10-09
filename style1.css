@@ -10,6 +10,9 @@ a {
 ul {
     list-style: none;
 }
+.logo a {
+    color: rgb(207, 181, 181);
+}
 .navbar{
     position: absolute;
     top: 0;
@@ -85,12 +88,12 @@ header
 }
 /* about me section */
 
-.about{
+#about{
 	width: 100%;
 	padding: 100px 0px;
 	background-color: #191919;
 }
-.about img{
+#about img{
 	height: auto;
 	width: 300px;
 }
@@ -143,11 +146,134 @@ header
 .button a {
     color: rgb(126, 32, 32);
   }
+/* activity section*/
+#title {
+    width: 100%;
+	padding: 100px 0px;
+   text-align: center;
+   font-size: 40px;
+   color: white;
+   background-color: black;
+   overflow: hidden;
+}
+.line{
+    width: 150px;
+    height: 5px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: rgb(126, 32, 32);
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+.cols{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.col{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+.container{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.front , .back{
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    color: white;
+    font-size: 0.9rem;
+    border: 3px solid white;
+}
+.back{
+    background: white;
+    background: rgba(255,255,255,0.20);
+    box-shadow: 0 8px 32px 0 rgb(13,13,13,0.37);
+    backdrop-filter: blur(4px);
+    border: 3px solid rgba(255,255,255,0.18);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.front:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    backface-visibility: hidden;
+}
+.container:hover .front,
+.container:hover .back{
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.inner{
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+}
+.container .back{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
 
+}
+.container .front{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    
+}
+.container:hover .back{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.container:hover .front{
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+.bnt {
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 50px;
+    
+    }
+.bnt a {
+    color: rgb(126, 32, 32);
+}
 /*mobile*/
 @media only screen and (max-width:490px){
     .menu-btn {
         display: block;
+        width: 30px;
     }
     .navbar {
         padding: 0;
@@ -167,6 +293,9 @@ header
         margin-top: -1500px;
         transition: all 0.5s ease;
     }
+    .menu-btn img{
+        width: 20px;
+    }
     .mobile-menu {
         margin-top: 0px;
     }
@@ -180,7 +309,7 @@ header
     header {
         height: 60vh;
     }
-    .about img{
+    #about img{
         height: auto;
         width: 200px;
     }
@@ -211,7 +340,7 @@ header
 	margin-bottom: 20px;
     text-align: center;
 }
-.about
+#about
 {
     padding: 50px 0px;
 }
@@ -260,7 +389,7 @@ header
     .about-text {
         width: 400px;
     }
-    .about img {
+    #about img {
         height: auto;
         width: 250px;
     }
@@ -304,7 +433,7 @@ header
         height: 110vh;
     }
    
-    .about img {
+    #about img {
         height: auto;
         width: 200px;
     }
@@ -376,7 +505,7 @@ header
     header {
         height: 50vh;
     }
-    .about{
+    #about{
         width: 100%;
         padding: 150px 0px;
     }
@@ -437,7 +566,7 @@ header
     header {
         height: 70vh;
     }
-    .about img{
+    #about img{
         height: auto;
         width: 200px;
     }
@@ -468,7 +597,7 @@ header
 	margin-bottom: 20px;
     text-align: center;
 }
-.about
+#about
 {
     padding: 50px 0px;
 }
@@ -500,7 +629,7 @@ header
     .about-text {
         width: 450px;
     }
-    .about {
+    #about {
         padding: 150px 0px;
     }
     .nav-links {

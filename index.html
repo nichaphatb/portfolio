@@ -8,11 +8,11 @@
 </head>
 <body>
     <nav class="navbar">
-        <h1 class="logo">PORTFOLIO</h1>
+        <h1 class="logo"><a href="index.html">PORTFOLIO</a></h1>
         <ul class="nav-links">
             <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="index.html">ACTIVITY2</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="index.html">ACTIVITY</a></li>
             <li><a href="#">CERTIFICATE</a></li>
             <li><a href="#">CONTECT</a></li>
         </ul>    
@@ -25,7 +25,8 @@
         </div>
     </header>
        <!----About section start---->
-	<section class="about">
+       
+	<section id="about">
 		<div class="main">
             <img src="tzuyu1.jpg">
 			<div class="about-text">
@@ -36,9 +37,57 @@
 			</div>
 		</div>
 	</section>
+    <section id="title">
+        <h2>Activity</h2>
+        <div class="line"></div>
+        <div class="wrapper">
+            <br>
+            <div class="cols">
+                <div class="col">
+                <div class="container">
+                    <div class="front" style="background-image: url(3.jpg);">
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                นำเสนอผลงานโครงการSMTE ภาคตะวันออกเฉียงเหนือตอนล่างครั้งที่12 <br> สาขา คอมพิวเตอร์
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="front" style="background-image: url(2.jpg);">
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>
+                                    การแข่งขันฟิสิกส์สัประยุทธ์โรงเรียนโครงการSMTE เครือข่ายกลุ่มภาคตะวันออกเฉียงเหนือตอนล่าง ครั้งที่10  ปีการศึกษา 2563
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="front" style="background-image: url(1.jpg);">
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>
+                                        กิจกรรมจิคอาสาทำหนังสือนิทานให้น้องๆอนุบาลที่โรงเรียนบ้านไหล่ทุ่ง
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+            </div>
+            <button class="bnt"><a href="home.html">More >></a></button>
 
+        </div>
     </section>
-  
         <script>
             const menuBtn = document.querySelector('.menu-btn')
             const navlinks = document.querySelector('.nav-links')
