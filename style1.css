@@ -36,8 +36,7 @@ ul {
 
 header
 {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     background-color:black;
     background-position: center;
     background-size: cover;
@@ -48,7 +47,7 @@ header
     padding: 10px 10%;
     color: white;
     text-align: center;
-    margin-top: 20%;   
+    margin: 20%;   
 }
 .header-content h1 {
     font-size: 15vmin;
@@ -276,12 +275,17 @@ header
     align-items: center;
     background: #191919;
     margin: 0;
-    padding: 0;
-    height: 100vh;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
-    
-
+    flex-direction: column;
+}
+.titlesec h2{
+    font-size: 50px;
+    color: white;
+}
+.titlesec{
+    margin-bottom: 50px;
 }
 .slider{
     width: 800px;
@@ -303,7 +307,7 @@ header
 }
 .st img{
     width: 800px;
-    height: 500px;
+    height: auto;
 }
 .nav-m{
     position: absolute;
@@ -367,6 +371,7 @@ header
 #radio4:checked ~ .nav-auto .a-b4{
     background-color: red;
 }
+
 /*mobile*/
 @media only screen and (max-width:490px){
     .menu-btn {
@@ -475,7 +480,24 @@ header
 .inner p{
     font-size: 8px;
 }
-}    
+.st img{
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+.slider{
+    width: 500px;
+    height: 200px;
+}  
+.nav-m{
+    width: 500px;
+    margin-top: -330px;
+}
+.nav-auto{
+    width: 500px;
+    margin-top: 170px;
+}
+
 
 @media only screen and (width:768px){
     .menu-btn {
@@ -908,3 +930,4 @@ header
     }
 }
 
+}
