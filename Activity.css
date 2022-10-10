@@ -48,17 +48,17 @@ button{
     height: 13px;
     width: 13px;
     border-radius: 50%;
-    border: 3px solid red;
+    border: 3px solid #8052ec;
     background-color: transparent;
 }
 .dot-container button:nth-child(1){
-    background-color: red;
+    background-color: #8052ec;
 }
 #prev,#next{
     height: 40px;
     width: 40px;
     position: absolute;
-    background-color: red;
+    background-color: #8052ec;
     color: #ffffff;
     margin: auto;
     top: 0;
@@ -73,4 +73,16 @@ button{
 }
 #next{
     right: 15px;
+}
+.but {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;   
+    align-items: center; 
+    }
+.but a {
+    color: #8052ec;
 }
