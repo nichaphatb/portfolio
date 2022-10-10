@@ -268,7 +268,123 @@ header
 .bnt a {
     color: rgb(126, 32, 32);
 }
-
+/* post section*/
+#blog-posts{
+    width: 100%;
+    padding: 100px 0px;
+   text-align: center;
+   font-size: 40px;
+   color: white;
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    flex-direction: column;align-content: center;
+}
+.post{
+    width: calc(33% - 10px);
+    overflow: hidden;
+}
+.post-img{
+    width: 100%;
+    border-radius: 6px;
+    transition: .3s linear;
+}
+.post-content{
+    background-color: #ffffffdd;
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 6px;
+    transform: translateY(-60px);
+    transition: .3s linear;
+}
+.post-content h3{
+    font-size: 16px;
+    color: black;
+    font-family: 'Noto Serif Thai', serif;
+}
+.post-content .text {
+    color: red;
+    font-family: 'Noto Serif Thai', serif;
+}
+.date {
+    font-size: 15px;
+    font-style: italic;
+    color: gray;
+}
+.post:hover .post-img{
+    transform: translateY(20px);
+}
+.post:hover .post-content{
+    transform: translateY(-80px);
+}
+.but {
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 10px;
+    
+    }
+.but a {
+    color: rgb(126, 32, 32);
+}
+/* footer*/
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  rgb(126, 32, 32);
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color: rgb(126, 32, 32);
+	bottom: 35px;
+	font-size: 14px; 
+}
 /*mobile*/
 @media only screen and (max-width:767px){
     .menu-btn {
@@ -377,6 +493,46 @@ header
 .inner p{
     font-size: 8px;
 }
+#blog-posts{
+    justify-content: center;
+}
+.post{
+    width: min(600px, 100%);
+}
+.cer h2{
+    font-size: 40px;
+}
+.post-img{
+    width: 300px;
+    border-radius: 6px;
+    transition: .3s linear;
+}
+.post-content{
+    background-color: #ffffffdd;
+    margin: 0 80px;
+    padding: 10px;
+    border-radius: 6px;
+    transform: translateY(-70px);
+    transition: .3s linear;
+}
+.post-content h3{
+    font-size: 11px;
+    color: black;
+    font-family: 'Noto Serif Thai', serif;
+}
+footer p:nth-child(1){
+	font-size: 40px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 200px;
+	text-align: center;
+	line-height: 26px;
+}
 }
 @media only screen and (width:768px){
     .menu-btn {
@@ -446,6 +602,28 @@ header
     }
     .inner p{
         font-size: 14px;
+    }
+    #blog-posts{
+        justify-content: center;
+    }
+    .post{
+        width: min(600px, 100%);
+    }
+    .cer h2{
+        font-size: 40px;
+    }
+    .post-img{
+        width: 100%;
+        border-radius: 6px;
+        transition: .3s linear;
+    }
+    .post-content{
+        background-color: #ffffffdd;
+        margin: 0 80px;
+        padding: 40px;
+        border-radius: 6px;
+        transform: translateY(-60px);
+        transition: .3s linear;
     }
 }
 /*mobile*/
