@@ -448,8 +448,8 @@ footer p:nth-child(2){
 	margin-bottom: 20px;
 	text-transform: capitalize;
 }
-.about-text p{
-	color: #fcfc;
+.about-text p{	
+    color: rgb(244, 236, 236);
 	letter-spacing: 1px;
 	line-height: 28px;
 	font-size: 12px;
@@ -677,7 +677,7 @@ footer p:nth-child(2){
         margin-top: 10px;
     }
     .about-text p{
-        color: #fcfc;
+        color: rgb(244, 236, 236);
         letter-spacing: 1px;
         line-height: 28px;
         font-size: 14px;
@@ -775,7 +775,7 @@ footer p:nth-child(2){
         margin-top: 10px;
     }
     .about-text p{
-        color: #fcfc;
+        color: rgb(244, 236, 236);
         letter-spacing: 1px;
         line-height: 28px;
         font-size: 22px;
@@ -875,7 +875,7 @@ footer p:nth-child(2){
 	text-transform: capitalize;
 }
 .about-text p{
-	color: #fcfc;
+	color: rgb(244, 236, 236);
 	letter-spacing: 1px;
 	line-height: 28px;
 	font-size: 18px;
