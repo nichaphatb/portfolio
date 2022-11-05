@@ -281,7 +281,8 @@ header
     justify-content: center;
     flex-wrap: wrap;
     cursor: pointer;
-    flex-direction: column;align-content: center;
+    flex-direction: column;
+    align-content: center;
 }
 .post{
     width: calc(33% - 10px);
@@ -783,7 +784,7 @@ footer p:nth-child(2){
         margin-bottom: 20px;
     }
     .about-text {
-        width: 450px;
+        width: 350px;
     }
     .main img{
         height: auto;
@@ -816,7 +817,17 @@ footer p:nth-child(2){
     .inner p{
         font-size: 14px;
     }
-}
+    .post-content{
+        padding: 5px;
+        margin: 0px 10px;
+    }
+    .post-content h3 {
+        font-size: 10px;
+    }
+    .post-content span{
+        font-size: 10px;
+    }
+}   
 
 @media only screen and (width:540px){
     .menu-btn {
@@ -987,4 +998,3 @@ footer p:nth-child(2){
         font-size: 14px;
     }
 }
-
