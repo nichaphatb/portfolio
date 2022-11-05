@@ -95,13 +95,22 @@ body{
     right: 0;
 }
 .wrapper a{
-    color: #575656;
+    color: white;
 }
 @media only screen and (max-width:767px){
     .wrapper a{
         font-size: 35px;
+        color: white;
+
     }
     .main-content .box{
         height: 200px;
     }
+    .content h2{
+        font-size: 20px;
+    }
+    .content p{
+        font-size: 12px;
+    
+      }
 }

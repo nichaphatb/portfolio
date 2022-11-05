@@ -185,6 +185,7 @@ header
     transform-style: preserve-3d;
     perspective: 1000px;
 }
+
 .front , .back{
     background-size: cover;
     background-position: center;
@@ -196,6 +197,8 @@ header
     color: white;
     font-size: 0.9rem;
     border: 3px solid white;
+    border-radius: 10px;
+
 }
 .back{
     background: white;
@@ -207,6 +210,7 @@ header
     top: 0;
     left: 0;
     width: 100%;
+
 }
 .front:after{
     position: absolute;
@@ -218,6 +222,7 @@ header
     content: '';
     display: block;
     backface-visibility: hidden;
+
 }
 .container:hover .front,
 .container:hover .back{
@@ -238,20 +243,28 @@ header
 .container .back{
     transform: rotateY(180deg);
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
 
 }
 .container .front{
     transform: rotateY(0deg);
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
     
 }
 .container:hover .back{
     transform: rotateY(0deg);
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
 }
 .container:hover .front{
     transform: rotateY(-180deg);
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
 }
 .bnt {
     background-color: white;
@@ -283,6 +296,7 @@ header
     cursor: pointer;
     flex-direction: column;
     align-content: center;
+    
 }
 .post{
     width: calc(33% - 10px);
