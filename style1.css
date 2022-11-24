@@ -13,6 +13,9 @@ ul {
 .logo a {
     color: white;
 }
+.logo span {
+    color: darkred;
+}
 .navbar{
     position: absolute;
     top: 0;
@@ -50,7 +53,7 @@ header
     margin: 20%;   
 }
 .header-content h1 {
-    font-size: 15vmin;
+    font-size: 11vmin;
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 10px;
@@ -61,7 +64,7 @@ header
 .header-content h2{
     font-size: 2vmin;
     font-family: Segoe Script;
-    color: rgb(81, 12, 12);
+    color: rgb(173, 122, 122);
     margin-bottom: 10px;
     background: black;
 
@@ -198,7 +201,7 @@ header
     font-size: 0.9rem;
     border: 3px solid white;
     border-radius: 10px;
-
+    -webkit-backface-visibility: hidden
 }
 .back{
     background: white;

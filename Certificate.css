@@ -61,7 +61,7 @@ button{
     height: 40px;
     width: 40px;
     position: absolute;
-    background-color: #8052ec;
+    background-color: darkred;
     color: #ffffff;
     margin: auto;
     top: 0;
@@ -87,5 +87,5 @@ button{
     align-items: center; 
     }
 .but a {
-    color: #8052ec;
+    color: darkred;
 }
