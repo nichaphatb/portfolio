@@ -8,34 +8,55 @@ a {
     text-decoration: none;
 }
 .section{
-	width: 100%;
-	min-height: 100vh;
 	background-color: black;
-    color: #fff;
+    color: white;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-image: url(bgp.png);
+	background-size: cover;
 }
 .container{
-	width: 80%;
-	display: block;
+	display: flex;
 	margin:auto;
-	padding-top: 100px;
+	padding-top: 50px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+
+	
+}
+.contain{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	flex-direction: column
+
+
+
 }
 .content-section{
 	float: left;
-	width: 55%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 .content-section h1 {
     color: white;
 }
 .content-section span{
-    color: #a52a2a;
+    color: #7a1414;
 }
 .image-section{
 	float: right;
-	width: 40%;
 }
 .image-section img{
-	width: 100%;
+	width: 400px;
 	height: auto;
+	border-radius: 10px;
 }
 .content-section .title{
 	text-transform: uppercase;
@@ -56,20 +77,20 @@ a {
 	margin-top: 30px;
 }
 .content span{
-    color: #cc7d7d;
+    color: #8d0e0e;
 }
 .content-section .content .button a{
-	background-color: #3d3d3d;
+	background-color: darkred;
 	padding:12px 40px;
 	text-decoration: none;
-	color:#fff;
+	color:white;
 	font-size: 20px;
 	letter-spacing: 1.5px;
     border-radius: 10px;
 }
 .content-section .content .button a:hover{
 	background-color: #a52a2a;
-	color:#fff;
+	color: white;
 }
 .content-section .social{
 	margin: 40px 40px;
@@ -82,7 +103,7 @@ a {
 .content-section .social i:hover{
 	color:#3d3d3d;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	.container{
 	width: 80%;
 	display: block;
@@ -120,6 +141,34 @@ a {
 	text-align: center;
 }
 
+}
+@media screen and (width: 820px){
+	.section{
+		background-size: covwe;
+		height: 100vh;
+
+
+	}
+}
+@media screen and (width: 912px){
+	.section{
+		background-size: covwe;
+		height: 100vh;
+
+	}
+}
+@media screen and (width: 768px){
+	.section{
+		background-size: 260%;
+		height: 100vh;
+
+	}
+}
+@media screen and (width: 1024px){
+	.section{
+		background-size: 150%;
+		height: 150vh;
+	}
 }
 
 

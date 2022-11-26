@@ -185,36 +185,35 @@ header
     margin-top: -5px;
 }
 .container{
-    transform-style: preserve-3d;
     perspective: 1000px;
 }
 
-.front , .back{
+.front{
     background-size: cover;
     background-position: center;
-    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
-    backface-visibility: hidden;
     text-align: center;
     min-height: 280px;
     height: auto;
     color: white;
     font-size: 0.9rem;
     border: 3px solid white;
-    border-radius: 10px;
-    -webkit-backface-visibility: hidden
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .back{
-    background: white;
-    background: rgba(255,255,255,0.20);
-    box-shadow: 0 8px 32px 0 rgb(13,13,13,0.37);
-    backdrop-filter: blur(4px);
-    border: 3px solid rgba(255,255,255,0.18);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-
+    border: 3px solid white;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
 }
+.inner p{
+    font-size: 10px;
+}
+
+/*
 .front:after{
     position: absolute;
     top: 0;
@@ -268,7 +267,7 @@ header
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
 
-}
+}*/
 .bnt {
     background-color: white;
     border: none;
@@ -405,7 +404,162 @@ footer p:nth-child(2){
 	font-size: 14px; 
 }
 /*mobile*/
-@media only screen and (max-width:767px){
+@media only screen and (width:280px){
+    .header-content h1{
+        font-size: 20px;
+    }
+.menu-btn {
+    display: block;
+    width: 30px;
+}
+.navbar {
+    padding: 0;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 18px;
+}
+
+.nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    background-color: gray;
+    margin-top: -1500px;
+    transition: all 0.5s ease;
+}
+.menu-btn img{
+    width: 20px;
+}
+.mobile-menu {
+    margin-top: 0px;
+}
+.nav-links li {
+    margin: 19px auto;
+}
+.header-content{
+   
+    margin-top: 50%;  
+}
+header {
+    height: 60vh;
+}
+#about img{
+    height: auto;
+    width: 120px;
+}
+.main {
+flex-wrap: wrap;
+}
+.about-text h2{
+color: white;
+font-size: 30px;
+text-transform: capitalize;
+margin-bottom: 10px;
+margin-top: 10px;
+text-align: center;
+}
+.about-text h5{
+color: white;
+letter-spacing: 2px;
+font-size: 10px;
+font-family: Segoe Script;
+margin-bottom: 20px;
+text-transform: capitalize;
+}
+.about-text p{	
+color: rgb(244, 236, 236);
+letter-spacing: 1px;
+line-height: 28px;
+font-size: 12px;
+margin-bottom: 20px;
+text-align: center;
+}
+#about
+{
+padding: 50px 0px;
+}
+.about-text .button{
+align-items: center;
+display: block;
+margin: auto;
+font-size: 14px;
+}
+.col{
+width: calc(50%);
+cursor: pointer;
+margin-left: 20px;
+
+}
+.front{
+
+text-align: center;
+min-height: 120px;
+
+}
+#title h2{
+font-size: 40px;
+
+}
+#title{
+padding: 80px 0px;
+
+}
+.bnt {
+margin-top: 5px;
+font-size: 14px;
+}
+.inner p{
+font-size: 8px;
+}
+#blog-posts{
+justify-content: center;
+}
+.post{
+width: min(600px, 100%);
+}
+.cer h2{
+font-size: 40px;
+}
+.post-img{
+width: 250px;
+border-radius: 6px;
+transition: .3s linear;
+}
+.post-content{
+background-color: #ffffffdd;
+margin: 0 40px;
+padding: 10px;
+border-radius: 6px;
+transform: translateY(-70px);
+transition: .3s linear;
+}
+.post-content h3{
+font-size: 11px;
+color: black;
+font-family: 'Noto Serif Thai', serif;
+}
+footer p:nth-child(1){
+font-size: 20px;
+color: white;
+margin-bottom: 20px;
+font-weight: bold;
+}
+footer p:nth-child(2){
+color: white;
+font-size: 10px;
+width: 200px;
+text-align: center;
+line-height: 26px;
+}
+
+}
+
+@media only screen and (min-width:290px) and (max-width:767px){
     .menu-btn {
         display: block;
         width: 30px;
@@ -491,7 +645,7 @@ footer p:nth-child(2){
     margin-left: 20px;
 
  }
- .front , .back{
+ .front{
 
     text-align: center;
     min-height: 120px;
@@ -528,7 +682,7 @@ footer p:nth-child(2){
 }
 .post-content{
     background-color: #ffffffdd;
-    margin: 0 80px;
+    margin: 0 90px;
     padding: 10px;
     border-radius: 6px;
     transform: translateY(-70px);
@@ -540,15 +694,15 @@ footer p:nth-child(2){
     font-family: 'Noto Serif Thai', serif;
 }
 footer p:nth-child(1){
-	font-size: 40px;
+	font-size: 30px;
 	color: white;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
 footer p:nth-child(2){
 	color: white;
-	font-size: 17px;
-	width: 200px;
+	font-size: 11px;
+	width: 400px;
 	text-align: center;
 	line-height: 26px;
 }
@@ -601,7 +755,7 @@ footer p:nth-child(2){
         margin-left: 20px;
     
      }
-     .front , .back{
+     .front{
     
         text-align: center;
         min-height: 250px;
@@ -724,12 +878,13 @@ footer p:nth-child(2){
             margin-left: 20px;
         
          }
-         .front , .back{
+         .front{
         
             text-align: center;
             min-height: 120px;
          
         }
+       
         #title h2{
             font-size: 40px;
         
@@ -745,7 +900,14 @@ footer p:nth-child(2){
         .inner p{
             font-size: 8px;
         }
-}
+        .post-content{
+            margin: 0 180px;
+        }
+        .footer p{
+            font-size: 30px;
+
+        }
+    }
 
 @media only screen and (width:820px){
     .menu-btn {
@@ -813,7 +975,7 @@ footer p:nth-child(2){
         margin-left: 20px;
     
      }
-     .front , .back{
+     .front{
     
         text-align: center;
         min-height: 280px;
@@ -927,7 +1089,7 @@ footer p:nth-child(2){
     margin-left: 20px;
 
  }
- .front , .back{
+ .front{
 
     text-align: center;
     min-height: 160px;
@@ -962,6 +1124,9 @@ footer p:nth-child(2){
     .inner p{
         font-size: 16px;
     }
+    .back{
+        min-height: 100px;
+    }
 }
 @media only screen and (width:912px){
     
@@ -993,11 +1158,14 @@ footer p:nth-child(2){
         margin-left: 20px;
     
      }
-     .front , .back{
+     .front{
     
         text-align: center;
         min-height: 280px;
      
+    }
+    .back{
+        min-height: 50px;
     }
     #title h2{
         font-size: 60px;
@@ -1013,5 +1181,9 @@ footer p:nth-child(2){
     }
     .inner p{
         font-size: 14px;
+    }
+    .post-content{
+        margin: 0 20px;
+        padding: 10px;
     }
 }
